@@ -194,6 +194,8 @@ Things we can remove
   * We can get rid of the `/routes/web.php` file (which of course means we need to
     remove the service provider)
   * We won't use channels, so let's get rid of `/routes/channels.php`
+* We don't need a `package.json` file
+* We don't need a `vite.config.js` file either
 
 There surely is more to remove here but we'll leave it like this for now, we
 want to get started with the app itself.
