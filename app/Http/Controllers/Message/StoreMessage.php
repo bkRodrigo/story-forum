@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers\Message;
 
+use App\Jobs\NotifyNewMessage;
 use App\Models\Message;
-use http\Env\Response;
 use Illuminate\Http\Request;
 use Illuminate\Http\JsonResponse;
 use App\Http\Controllers\Controller;
@@ -25,12 +25,23 @@ class StoreMessage extends Controller
             'thread_id' => 'required|exists:threads,id',
         ]);
 
-        $message = Message::create([
-            'body' => request('body'),
-            'user_id' => auth()->user()->id,
-            'thread_id' =>  request('thread_id'),
-        ]);
+        $message = $this->createMessage(
+            request('body'), auth()->user()->id, request('thread_id')
+        );
 
         return response()->json($message);
+    }
+
+    protected function createMessage($body, $userId, $threadId)
+    {
+        $message = Message::create([
+            'body' => $body,
+            'user_id' => $userId,
+            'thread_id' =>  $threadId,
+        ]);
+
+        NotifyNewMessage::dispatch($message)->delay(now()->addMinute());
+
+        return $message;
     }
 }
