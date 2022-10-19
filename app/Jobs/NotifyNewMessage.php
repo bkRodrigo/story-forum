@@ -79,7 +79,7 @@ class NotifyNewMessage implements ShouldQueue
         }
         $msg .= ']';
         foreach ($thread->contributors() as $user) {
-            logger($user->name . ', ');
+            logger($user->full_name . ', ' . $msg);
         }
     }
 }
