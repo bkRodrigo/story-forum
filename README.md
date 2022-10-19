@@ -11,5 +11,40 @@ you'll find
 * [local env](./documentation/deploy/local.md): Here you'll find detailed instructions
   on getting the dev env running.
 
+## Running locally
+### Requirements
+* Docker
+* Docker compose
+* Git
+
+### Before building
+#### Docker config
+Please keep in mind that this app will run in docker and that the web server will be
+mounted to the port that you specify [here](https://github.com/bkRodrigo/story-forum/blob/main/docker-compose.yml#L39)
+(by default, it maps to port 8080 of the host).
+
+#### Env
+Create a `.env` file and configure as required (not changing anything will work)
+```
+cp .env.example .env
+```
+
+### Getting local env running
+```
+# Build the docker image
+docker-compose build app
+
+# Start the daemon
+docker-compose up -d
+
+# Stop the daemon
+docker-compose down
+
+# Run composer install
+docker-compose exec app composer install
+
+
+```
+
   
 I hope you enjoy this project!

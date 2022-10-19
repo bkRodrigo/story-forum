@@ -66,9 +66,9 @@ With the grunt work out of the way, let's continue with our user API
   auth tokens (carry on from yesterday)
 * [x] Let's create the models for this project and whip up MySQL as the DB for
   this
-* [ ] Let's flesh out the API
+* [x] Let's flesh out the API
 * [ ] Let's get a nice debounce logic for events working
-* [ ] Let's make sure our docs are nice and clean
+* [x] Let's make sure our docs are nice and clean
 * [ ] Let's deploy this to live via Github actions
 
 [back to main log](../log.md)

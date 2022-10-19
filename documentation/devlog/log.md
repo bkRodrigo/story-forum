@@ -70,5 +70,6 @@ retro on the experience of doing this challenge
   ACL rules
 * Policies!!! We definitely could've explored building good policies for this
 * I also didn't have time to verify that my api docs worked as expected
+* I would've liked to also make some good deploy docs
 
 [back to README](../../README.md)
