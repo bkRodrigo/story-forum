@@ -1,0 +1,497 @@
+{
+	"info": {
+		"_postman_id": "a5a230eb-fc75-46a9-b6f0-617aefbf1772",
+		"name": "Story-Forum",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23931125"
+	},
+	"item": [
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "GetUser",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{http}}{{host}}/api/user",
+							"host": [
+								"{{http}}{{host}}"
+							],
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "StoreUser",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "full_name",
+									"value": "Story Hunter",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "demo@test.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Passw0rd!",
+									"type": "text"
+								},
+								{
+									"key": "bio",
+									"value": "test",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{http}}{{host}}/api/user",
+							"host": [
+								"{{http}}{{host}}"
+							],
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShowUser",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{http}}{{host}}/api/user/1",
+							"host": [
+								"{{http}}{{host}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "demo@test.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Passw0rd!",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{http}}{{host}}/api/login",
+							"host": [
+								"{{http}}{{host}}"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Thread",
+			"item": [
+				{
+					"name": "Index",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{http}}{{host}}/api/thread",
+							"host": [
+								"{{http}}{{host}}"
+							],
+							"path": [
+								"api",
+								"thread"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "StoreThread",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Sample title thread",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{http}}{{host}}/api/thread",
+							"host": [
+								"{{http}}{{host}}"
+							],
+							"path": [
+								"api",
+								"thread"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShowThread",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{http}}{{host}}/api/thread/1",
+							"host": [
+								"{{http}}{{host}}"
+							],
+							"path": [
+								"api",
+								"thread",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Message",
+			"item": [
+				{
+					"name": "StoreMessage",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "body",
+									"value": "thread 1 message",
+									"type": "text"
+								},
+								{
+									"key": "thread_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{http}}{{host}}/api/message",
+							"host": [
+								"{{http}}{{host}}"
+							],
+							"path": [
+								"api",
+								"message"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateMessage",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "body",
+									"value": "Thread 1 message updated",
+									"type": "text"
+								},
+								{
+									"key": "_method",
+									"value": "PUT",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{http}}{{host}}/api/message/1",
+							"host": [
+								"{{http}}{{host}}"
+							],
+							"path": [
+								"api",
+								"message",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Index",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{http}}{{host}}/api/message",
+							"host": [
+								"{{http}}{{host}}"
+							],
+							"path": [
+								"api",
+								"message"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SearchThreadNoTerm",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{http}}{{host}}/api/message?thread_id=1",
+							"host": [
+								"{{http}}{{host}}"
+							],
+							"path": [
+								"api",
+								"message"
+							],
+							"query": [
+								{
+									"key": "thread_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SearchThreadWithTerm",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{http}}{{host}}/api/message?thread_id=1&term=upd",
+							"host": [
+								"{{http}}{{host}}"
+							],
+							"path": [
+								"api",
+								"message"
+							],
+							"query": [
+								{
+									"key": "thread_id",
+									"value": "1"
+								},
+								{
+									"key": "term",
+									"value": "upd"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SearchTerm",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{http}}{{host}}/api/message?term=upd",
+							"host": [
+								"{{http}}{{host}}"
+							],
+							"path": [
+								"api",
+								"message"
+							],
+							"query": [
+								{
+									"key": "term",
+									"value": "upd"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

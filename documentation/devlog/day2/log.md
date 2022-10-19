@@ -69,6 +69,7 @@ With the grunt work out of the way, let's continue with our user API
 * [x] Let's flesh out the API
 * [ ] Let's get a nice debounce logic for events working
 * [x] Let's make sure our docs are nice and clean
-* [ ] Let's deploy this to live via Github actions
+* [x] Let's deploy this to live via Github actions- In the end, I just manually
+  created a demo env, no github actions unfortunately (no time!)
 
 [back to main log](../log.md)
