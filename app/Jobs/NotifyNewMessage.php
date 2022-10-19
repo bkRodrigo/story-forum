@@ -74,7 +74,7 @@ class NotifyNewMessage implements ShouldQueue
         $msg = 'the following messages have been recently created: [ ';
         foreach ($messages as $message) {
             $msg .= $message->id . ' ';
-            $message->notified = Carbon::now()->timestamp;
+            $message->notified = Carbon::now();
             $message->save();
         }
         $msg .= ']';
