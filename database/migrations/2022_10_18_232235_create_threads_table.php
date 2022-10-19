@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Facades\DB;
 
 return new class extends Migration
 {
@@ -13,14 +14,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('threads', function (Blueprint $table) {
             $table->id();
-            $table->string('full_name');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->mediumText('bio')->nullable();
-            $table->string('password');
-            $table->rememberToken();
+            $table->string('title');
+            $table->foreignId('user_id')->nullable()->constrained(); // Creator
             $table->timestamps();
         });
     }
@@ -32,6 +29,11 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        if (DB::getDriverName() !== 'sqlite') {
+            Schema::table('threads', function (Blueprint $table) {
+                $table->dropForeign(['user_id']);
+            });
+        }
+        Schema::dropIfExists('threads');
     }
 };
