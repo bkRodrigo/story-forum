@@ -1,4 +1,4 @@
-[back to day2 log](../log.md)
+[back to day2 log](./log.md)
 
 ## Setup the user models and get an API authentication in place
 In order for us to check that we're creating docs and our tests run as expected,
@@ -68,4 +68,4 @@ Most of this is pretty simple to do, suffice it to say that we did the following
   * Returns: auth token
   * Tests created, yes [LogInUserTest](../../../tests/User/LogInUserTest.php)
 
-[back to day2 log](../log.md)
+[back to day2 log](./log.md)
