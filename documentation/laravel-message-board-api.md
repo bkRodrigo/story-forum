@@ -1,4 +1,4 @@
-[back to README](../../README.md)
+[back to README](../README.md)
 
 # message-board
 The bread-and-butter of Storyhunter is the ability of freelancers and publishers to communicate with each other. As such, we'd like to explore how you would structure a simple message exchange API. This test is designed to verify that:
@@ -95,4 +95,4 @@ Endpoint parameters and return values are defined. You may decide whether parame
 * Code should be well commented
 * Your work should be "production ready"
 
-[back to README](../../README.md)
+[back to README](../README.md)
