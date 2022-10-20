@@ -14,7 +14,7 @@ Let's map this out day by day.
 ### Day 1 (_Sunday_)
 I have something like `60` to `90` minutes I can invest in this project today.
 Here's the order of business for the day
-* High level analysis of the project [Completed on Day 1](devlog.md#day-1)
+* High level analysis of the project
 * Get the local environment running
 * Get general API docs running
 * Clean up the code repository such that uneeded files can be pruned out
