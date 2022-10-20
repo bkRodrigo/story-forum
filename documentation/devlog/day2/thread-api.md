@@ -1,4 +1,4 @@
-[back to day2 log](../log.md)
+[back to day2 log](./log.md)
 
 ## Let's create the entities
 Entities is just a matter of running a couple of artisan commands
@@ -59,4 +59,4 @@ leave the notifications scheme for later on.
     * term=`string` (optional)
   * Tests created, yes [SearchMessageTest.php](../../../tests/Message/SearchMessageTest.php)
 
-[back to day2 log](../log.md)
+[back to day2 log](./log.md)
