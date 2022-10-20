@@ -43,4 +43,6 @@ retro on the experience of doing this challenge
 
 [devlog for day 3](./day3/log.md)
 
+---
+
 [back to README](../../README.md)
