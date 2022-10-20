@@ -40,5 +40,6 @@ I should have something like 3 hours to invest in this project on Monday
 ### Day 3 (_Wednesday morning_)
 I'm only going to put in 30 minutes to button everything up and have a bit of a
 retro on the experience of doing this challenge
+[devlog for day 3](./day3/log.md)
 
 [back to README](../../README.md)
