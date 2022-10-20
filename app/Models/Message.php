@@ -17,8 +17,18 @@ class Message extends Model
      */
     protected $fillable = [
         'body',
+        'notified',
         'user_id',
         'thread_id',
+    ];
+
+    /**
+     * The attributes that should be cast.
+     *
+     * @var array
+     */
+    protected $casts = [
+        'notified' => 'timestamp',
     ];
 
     /**

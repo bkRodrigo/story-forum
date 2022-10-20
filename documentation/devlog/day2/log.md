@@ -60,7 +60,6 @@ With the grunt work out of the way, let's continue with our user API
 ### Threads API
 [thread api logs](./thread-api.md)
 
-
 ### Things Completed today
 * [x] Let's check our work by allowing the API logging in and generating
   auth tokens (carry on from yesterday)
@@ -68,8 +67,13 @@ With the grunt work out of the way, let's continue with our user API
   this
 * [x] Let's flesh out the API
 * [ ] Let's get a nice debounce logic for events working
-* [x] Let's make sure our docs are nice and clean
+* [x] Let's make sure our docs are nice and clean: they're "cleanish"
 * [x] Let's deploy this to live via Github actions- In the end, I just manually
   created a demo env, no github actions unfortunately (no time!)
+
+Day 2 turned out to be a little more than just Monday 😂. Day 2 was approximately
+2 hours on Monday and 4 hours on Tuesday. With that said, I unfortunately didn't
+get to the debounce logic. I'll have a tiny 1 hour block on Wednesday and get this
+done
 
 [back to main log](../log.md)

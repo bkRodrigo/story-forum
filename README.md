@@ -8,8 +8,6 @@ you'll find
   the project reqs
 * [my Devlog](./documentation/devlog/log.md): In my devlog you'll see what I did during
   each of the 4 full days of work
-* [local env](./documentation/deploy/local.md): Here you'll find detailed instructions
-  on getting the dev env running.
 
 ## Running locally
 ### Requirements
@@ -62,6 +60,8 @@ docker-compose exec app vendor/bin/phpunit
 ### Test the demo env!
 Go to http://sh01.brewkrafts.com/ in order to see some API docs
 You can checkout my Postman collection [here](documentation/Story-Forum.postman_collection.json)
+The web page also has a postman collection but I have not verified that it
+works, if you're curious: http://sh01.brewkrafts.com/.postman
 
 ### Things that could be improved
 Here's a list of things I would've liked to improve;
