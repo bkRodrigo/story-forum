@@ -63,6 +63,8 @@ You can checkout my Postman collection [here](documentation/Story-Forum.postman_
 The web page also has a postman collection but I have not verified that it
 works, if you're curious: http://sh01.brewkrafts.com/.postman
 
+---
+
 ### Things that could be improved
 Here's a list of things I would've liked to improve;
 * It would be best to use UUIDs in order to specify entity ids
