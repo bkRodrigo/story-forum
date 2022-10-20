@@ -132,7 +132,7 @@ This looks to pretty much solve everything I want but latest commit is from 2
 years ago and there are issues that are more than 2 years old. This package is
 not looking promising, next...
 
-Nest search resulted in [knuckleswtf/scribe](https://github.com/knuckleswtf/scribe).
+Next search resulted in [knuckleswtf/scribe](https://github.com/knuckleswtf/scribe).
 Latest commit on this is yesterday! Issues seem to be getting addressed actively.
 This is definitely more promising. How about the features? It has many features,
 but most importantly, it supports what I'm trying to support;
