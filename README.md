@@ -8,8 +8,6 @@ you'll find
   the project reqs
 * [my Devlog](./documentation/devlog/log.md): In my devlog you'll see what I did during
   each of the 4 full days of work
-* [local env](./documentation/deploy/local.md): Here you'll find detailed instructions
-  on getting the dev env running.
 
 ## Running locally
 ### Requirements
