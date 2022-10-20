@@ -87,6 +87,11 @@ Here's a list of things I would've liked to improve;
     * As with all sample projects, this one also has things that can be improved
 * The possibility to have nodes that only do jobs and nodes that only take on
   requests; I just didn't have time to do this
+* Automate the tests.
+    * Pre-commit hooks that run tests
+    * Merging PRs should be blocked based on tests passing
+    * Code coverage
+    * General QA stuff regarding maintaining this service  
 * Deploy this to something like Github actions... just not enough time
 * I would've liked to use API keys here instead of just auth tokens. We should
   be able to support any type of client. App clients might also need different
