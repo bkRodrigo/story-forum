@@ -219,7 +219,7 @@ something like the LAMP stack.
 ### That's it!
 I ran out of time, I feel like it's a healthy amount of effort for `1` hour.
 Here's the list of tasks and what was completed;
-* [x] High level analysis of the project [Completed on Day 1](devlog.md#day-1)
+* [x] High level analysis of the project
 * [x] Get the local environment running
 * [x] Get general API docs running
 * [x] Clean up the code repository such that uneeded files can be pruned out
