@@ -7,7 +7,7 @@ you'll find
 * [project Reqs](./documentation/laravel-message-board-api.md): Full doc describing
   the project reqs
 * [my Devlog](./documentation/devlog/log.md): In my devlog you'll see what I did during
-  each of the 4 full days of work
+  each of the 3 days of work
 
 ## Running locally
 ### Requirements
