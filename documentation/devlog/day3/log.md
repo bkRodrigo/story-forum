@@ -1,6 +1,6 @@
 [back to main log](../log.md)
 
-## Day 2 (_Monday_)
+## Day 3 (_Wednesday_)
 Order of business for today;
 * [ ] Let's get a nice debounce logic for events working
 * [ ] Send the email to the reviewers of this project!
